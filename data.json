@@ -1,0 +1,81 @@
+[
+  {
+    "id": "f465a1c4-102a-4348-8431-6ec41e0c4dc3",
+    "element": "text",
+    "is_required": true,
+    "hint": "یخ",
+    "title": "تب",
+    "image_url": null,
+    "value": null,
+    "category_prop_status": "active",
+    "category_property_size": "half",
+    "querry": [
+      {
+        "operator": "and",
+        "fields": [
+          {
+            "value": "1 a",
+            "condition": "containsStatement",
+            "operator": "and"
+          },
+          {
+            "value": "1 b",
+            "condition": "withoutStatement",
+            "operator": "and"
+          },
+          {
+            "value": "1 c",
+            "condition": "containsStatement"
+          }
+        ]
+      },
+      {
+        "operator": "and",
+        "fields": [
+          {
+            "value": "2 a",
+            "condition": "withoutStatement",
+            "operator": "or"
+          },
+          {
+            "value": "2 b",
+            "condition": "containsStatement",
+            "operator": "and"
+          },
+          {
+            "value": "2 c",
+            "condition": "containsStatement",
+            "operator": "and"
+          },
+          {
+            "value": "2 d",
+            "condition": "containsStatement"
+          }
+        ]
+      },
+      {
+        "fields": [
+          {
+            "value": "3 a",
+            "condition": "containsStatement",
+            "operator": "and"
+          },
+          {
+            "value": "3 b",
+            "condition": "withoutStatement",
+            "operator": "and"
+          },
+          {
+            "value": "3 c",
+            "condition": "containsStatement",
+            "operator": "and"
+          },
+          {
+            "value": "3 d",
+            "condition": "withoutStatement"
+          }
+        ]
+      }
+    ]
+  }
+]
