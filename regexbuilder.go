@@ -1,4 +1,4 @@
-package regx
+package regexbuilder
 
 import (
 	"errors"
