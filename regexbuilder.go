@@ -287,7 +287,7 @@ func numberType(numberString string) NineSituations {
 		result.allNineFlag = false
 	}
 
-	if result.allNineFlag == true {
+	if result.allNineFlag  {
 		for _, digit := range []byte(numberString) {
 			intDigit , _ := strconv.Atoi(string(digit)) 
 			if intDigit != 9 {
