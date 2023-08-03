@@ -229,11 +229,11 @@ func (NumberConditionType) OddNumber(value string) string {
 // Text Condition methods
 
 func (TextConditionType) ContainStatement(statement string) string {
-	return fmt.Sprintf(`(?i).*%s.*`, statement)
+	return fmt.Sprintf(`.*%s.*`, statement)
 }
 
 func (TextConditionType) WithoutStatement(statement string) string {
-	return fmt.Sprintf(`(?i)^(?!.*%s).*`, statement)
+	return fmt.Sprintf(`^(?!.*%s).*`, statement)
 }
 
 func (TextConditionType) GreaterCharacterSizeThan(statement string) string {
