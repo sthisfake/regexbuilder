@@ -251,7 +251,7 @@ func BuildPattern(condition interface{}, value string) (string, error) {
 	conditionValue := reflect.ValueOf(condition)
 	conditionResult  := conditionValue.Call([]reflect.Value{reflect.ValueOf(value)})
 	
-	if len(conditionResult) > 2 {
+	if len(conditionResult) <= 2 {
 		conditionPattern, ok := conditionResult[0].Interface().(string)
 		if !ok {
 			return "", fmt.Errorf("invalid pattern type")
